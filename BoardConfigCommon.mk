@@ -98,6 +98,10 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 #Sensors
 SENSORS_NEED_SETRATE_ON_ENABLE := true
 
+# Time services
+BOARD_USES_QC_TIME_SERVICES := true
+>>>>>>> 9223038... jf: Enable QC time services
+
 # SELinux
 BOARD_SEPOLICY_DIRS += \
         device/samsung/jf-common/sepolicy
