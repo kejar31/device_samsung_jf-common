@@ -42,8 +42,8 @@ PRODUCT_COPY_FILES += \
 	
 # Wifi
 PRODUCT_COPY_FILES += \
-        device/samsung/d2-common/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
-        device/samsung/d2-common/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf
+        device/samsung/jf-common/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
+        device/samsung/jf-common/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf
 
 # Media Profile
 PRODUCT_COPY_FILES += \
