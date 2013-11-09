@@ -39,11 +39,11 @@ PRODUCT_COPY_FILES += \
     device/samsung/jf-common/audio/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3 \
     device/samsung/jf-common/audio/audio_policy.conf:system/etc/audio_policy.conf \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml
-	
+
 # Wifi
 PRODUCT_COPY_FILES += \
-        device/samsung/jf-common/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
-        device/samsung/jf-common/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf
+    device/samsung/jf-common/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
+    device/samsung/jf-common/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf
 
 # Media Profile
 PRODUCT_COPY_FILES += \
@@ -84,7 +84,7 @@ PRODUCT_PACKAGES += \
     init.carrier.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
-	init.ril.rc \
+    init.ril.rc \
     init.target.rc \
     ueventd.qcom.rc
 
@@ -94,7 +94,10 @@ PRODUCT_PACKAGES += Torch
 # Wifi
 PRODUCT_PACKAGES += \
     libnetcmdiface \
-    macloader
+    macloader \
+    crda \
+    regulatory.bin \
+    linville.key.pub.pem
 
 # NFC packages
 PRODUCT_PACKAGES += \
