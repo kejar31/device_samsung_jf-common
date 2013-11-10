@@ -24,7 +24,12 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/jf-common/overlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
+HOST_CHECK := $(shell hostname)
+ifeq ($(HOST_CHECK), cphelps76-HP-Pavilion-dv7)
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
+else
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+endif
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
