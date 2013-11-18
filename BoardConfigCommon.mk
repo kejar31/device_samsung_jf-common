@@ -86,3 +86,12 @@ BOARD_USES_SEPERATED_HEADSET_MIC := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 USE_DEVICE_SPECIFIC_QCOM_PROPRIETARY:= true
 
+# SELinux
+BOARD_SEPOLICY_DIRS += \
+        device/samsung/jf-common/sepolicy
+
+# The list below is order dependent
+BOARD_SEPOLICY_UNION := \
+       device.te \
+       app.te \
+       file_contexts
