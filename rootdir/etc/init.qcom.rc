@@ -623,9 +623,6 @@ service fuse_usbdisk /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/usbdisk
     class late_start
     disabled
 
-on property:ro.fuse_sdcard=true
-    start sdcard
-
 # This will make sure that sdcard service starts as late_start.
 on nonencrypted
     setprop ro.fuse_sdcard ${persist.fuse_sdcard}
