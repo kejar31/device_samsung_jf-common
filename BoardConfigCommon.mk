@@ -92,6 +92,9 @@ BOARD_USES_SEPERATED_HEADSET_MIC := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 USE_DEVICE_SPECIFIC_QCOM_PROPRIETARY:= true
 
+# Sensors
+SENSORS_NEED_SETRATE_ON_ENABLE := true
+
 # SELinux
 BOARD_SEPOLICY_DIRS += \
         device/samsung/jf-common/sepolicy
